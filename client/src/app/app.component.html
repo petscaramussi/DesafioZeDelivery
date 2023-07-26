@@ -1,0 +1,6 @@
+
+<input type="number" id="numberOfCards"/>
+<button (click)="addCards()">add cards</button>
+<ul *ngFor="let iten of list; let i = index">
+  <li (click)="setPosition(i)">{{ iten }}</li>
+</ul>
